@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PhatCat</string>
+    <string name="api_url">http://10.0.2.2:3333</string>
+    <string name="api_google_client_id">988405353599-vt6jc0tfk4ca46mk7515gu58e7usnd41.apps.googleusercontent.com</string>
+</resources>
