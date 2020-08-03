@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NameSetupActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="229dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/account_setup_title"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="280dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/account_setup_desc"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/name_ok_button"
+        android:layout_width="120dp"
+        android:layout_height="49dp"
+        android:text="@android:string/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edit_display_name"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/edit_display_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_display_name" />
+
+    <EditText
+        android:id="@+id/edit_display_name"
+        android:layout_width="282dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:autofillHints="name"
+        android:ems="10"
+        android:hint="@string/set_name_prompt"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/description"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="156dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/error"
+        android:textAlignment="center"
+        android:textColor="@color/colorErrorText"
+        app:layout_constraintEnd_toEndOf="@+id/edit_display_name"
+        app:layout_constraintStart_toStartOf="@+id/edit_display_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_display_name" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">PhatCat</string>
-    <string name="api_url">http://10.0.2.2:3333</string>
+    <string name="account_setup_title">Welcome to PhatCat!</string>
+    <string name="account_setup_desc">Before you can track your pet\'s meals, you need to decide how other people see you</string>
+    <string name="set_name_prompt">Display name</string>
     <string name="api_google_client_id">988405353599-vt6jc0tfk4ca46mk7515gu58e7usnd41.apps.googleusercontent.com</string>
+    <string name="name_too_short">Name must be at least 3 characters</string>
+    <string name="name_too_long">Name must be less than 24 characters</string>
+    <string name="error">Error</string>
 </resources>
